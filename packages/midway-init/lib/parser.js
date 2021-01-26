@@ -12,11 +12,6 @@ const getParserOptions = () => {
       type: 'string',
       description: 'target directory',
     },
-    force: {
-      type: 'boolean',
-      description: 'force to override directory',
-      alias: 'f',
-    },
     template: {
       type: 'string',
       description: 'local path to boilerplate',
@@ -29,10 +24,6 @@ const getParserOptions = () => {
       type: 'string',
       description: 'npm registry, support china/npm/custom, default to auto detect',
       alias: 'r',
-    },
-    silent: {
-      type: 'boolean',
-      description: 'don\'t ask, just use default value',
     },
   };
 };

@@ -1,20 +1,23 @@
-import { MidwayHandlerKey } from './constants';
-import { MidwayContainer } from './container';
 import { ManagedValue, VALUE_TYPE } from 'injection';
+import { MidwayContainer } from './container';
 
 export class MidwayRequestContainer extends MidwayContainer {
 
   applicationContext: MidwayContainer;
   ctx;
 
-  constructor(applicationContext) {
+  constructor(applicationContext, ctx?) {
     super();
     this.parent = applicationContext;
     this.applicationContext = applicationContext;
+
+    if (ctx) {
+      this.updateContext(ctx);
+    }
   }
 
   updateContext(ctx) {
-    this.registry.clearAll();
+    // this.registry.clearAll();
     this.ctx = ctx;
     // register ctx
     this.registerObject('ctx', ctx);
@@ -22,24 +25,7 @@ export class MidwayRequestContainer extends MidwayContainer {
     this.registerObject('logger', ctx.logger);
   }
 
-  registerEachCreatedHook() {
-    // register handler for container
-    this.registerDataHandler(MidwayHandlerKey.CONFIG, (key) => {
-      return this.ctx.app.config[key];
-    });
-
-    this.registerDataHandler(MidwayHandlerKey.PLUGIN, (key) => {
-      return this.ctx.app.pluginContext.get(key);
-    });
-
-    this.registerDataHandler(MidwayHandlerKey.LOGGER, (key) => {
-      return this.ctx.app.getLogger(key);
-    });
-
-    super.registerEachCreatedHook();
-  }
-
-  get<T>(identifier: any, args?: any) {
+  get<T = any>(identifier: any, args?: any): T {
     if (typeof identifier !== 'string') {
       identifier = this.getIdentifier(identifier);
     }
@@ -49,7 +35,7 @@ export class MidwayRequestContainer extends MidwayContainer {
     const definition = this.applicationContext.registry.getDefinition(identifier);
     if (definition && definition.isRequestScope()) {
       // create object from applicationContext definition for requestScope
-      return this.resolverFactory.create(definition, args);
+      return this.getManagedResolverFactory().create(definition, args);
     }
 
     if (this.parent) {
@@ -57,7 +43,7 @@ export class MidwayRequestContainer extends MidwayContainer {
     }
   }
 
-  async getAsync<T>(identifier: any, args?: any) {
+  async getAsync<T = any>(identifier: any, args?: any): Promise<T> {
     if (typeof identifier !== 'string') {
       identifier = this.getIdentifier(identifier);
     }
@@ -72,11 +58,11 @@ export class MidwayRequestContainer extends MidwayContainer {
         definition.constructorArgs = [valueManagedIns];
       }
       // create object from applicationContext definition for requestScope
-      return await this.resolverFactory.createAsync(definition, args);
+      return this.getManagedResolverFactory().createAsync(definition, args);
     }
 
     if (this.parent) {
-      return await this.parent.getAsync<T>(identifier, args);
+      return this.parent.getAsync<T>(identifier, args);
     }
   }
 }

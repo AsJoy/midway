@@ -4,6 +4,10 @@ sidebar: auto
 
 # 依赖注入手册
 
+::: warning
+本文档已迁移至 [新地址](https://midwayjs.org/injection/guide.html)，此处内容不再继续更新。
+:::
+
 Midway 中使用了非常多的依赖注入的特性，通过装饰器的轻量特性，让依赖注入变的优雅，从而让开发过程变的便捷有趣。
 
 ## 背景
@@ -39,7 +43,7 @@ import {B} from './B';
 class C {
   consturctor() {
     this.a = new A();
-    this.b = new B(a);
+    this.b = new B(this.a);
   }
 }
 ```
@@ -66,6 +70,8 @@ npm i injection --save
 ```ts
 // 使用 IoC
 import {Container} from 'injection';
+import {A} from './A';
+import {B} from './B';
 const container = new Container();
 container.bind(A);
 container.bind(B);
@@ -86,7 +92,18 @@ IoC 容器就像是一个对象池，管理这每个对象实例的信息（Clas
 
 ## 获取 IoC 容器
 
-所谓的容器就是一个对象池，它会在应用初始化的时候自动处理类的依赖，并将类进行实例化。比如上边的 `UserService` 类，在经过容器初始化之后，会自动实例化，并且对 `userModel` 进行赋值。
+所谓的容器就是一个对象池，它会在应用初始化的时候自动处理类的依赖，并将类进行实例化。比如下面的 `UserService` 类，在经过容器初始化之后，会自动实例化，并且对 `userModel` 进行赋值，看不到实例化的过程。
+
+```ts
+class UserService {
+  
+  private userModel;
+  
+  async getUser(uid) {
+    // TODO
+  }
+}
+```
 
 Midway 内部使用了自动扫描的机制，在应用初始化之前，会扫描所有的文件，包含装饰器的文件会 **自动绑定** 到容器。
 
@@ -105,7 +122,7 @@ const container = new Container();
 
 ## 对象定义
 
-所谓的对象定义指的是一个对象的基本行为，以及将这些行为描述出来。
+一个对象的基本元信息，比如名字，是否异步，有哪些属性，依赖等等，我们把这些信息组合到一起，形成一个对象定义。
 
 对象定义往往表现在他的基础类型上， injection 内置了名为 `ObjectDefinition` 的对象定义类，它包含一系列属性，比如：
 
@@ -117,12 +134,13 @@ const container = new Container();
 
 以上只是列举了一小部分，通过这个定义，容器就可以将一个对象简单的创建出来。
 
+`ObjectDefinition` 的具体属性文档，可以在 [这里看到](https://midwayjs.org/injection/api-reference/classes/objectdefinition.html)
+
 ## 绑定对象定义
 
-我们在创建容器之后，将会往这个容器中添加一些对象定义，这样容器才能将这些对象创建出来。
+我们在创建容器之后，将会往这个容器中添加一些对象定义，这样容器才能将对应对象创建出来。
 
-```typescript
-
+```ts
 class UserService {
   
   private userModel;
@@ -136,12 +154,22 @@ class UserService {
 // 内部代码
 const container = new Container();  // 创建容器
 container.bind('userService', UserService); // 可以在绑定的时候传一个名字作为 key
+container.bind(UserService); // 也可以直接传入 Class，自动分析对象的元信息生成对象定义
+```
 
-//... 省略逻辑
+`bind` 方法通过传入类型，自动分析类型上面包含的元信息，具体的 API 参数可以查看[这里](https://midwayjs.org/injection/api-reference/classes/container.html#bind)。
+
+## 普通情况下获取对象
+
+```ts
+//... 省略绑定逻辑
 
 const userService = await container.getAsync('userService');  // 这里根据 key 获取对象
 const user = await userService.getUser('123');
 
+// 如果对象以及对象的依赖中没有异步的情况，也可以同步获取
+const userService = container.get('userService'); 
+const user = userService.getUser('123');
 //...
 ```
 
@@ -149,9 +177,14 @@ const user = await userService.getUser('123');
 
 如果一个对象依赖了另一个对象，那么在创建的时候，依赖的对象都会被自动创建并且在容器中管理起来。
 
-## 使用装饰器
+::: tip Tip
+由于 Node.js 中大多对象或者依赖都需要支持异步的情况，所以一般情况下我们都使用 `getAsync` 方法。
+:::
 
-如果每次代码都需要手动绑定，然后通过 `get/getAsync` 方法拿到对应的对象，那将会非常繁琐，由于 Midway 6 基于 ts，参考了业界的 IoC 实现，完成了属于自己的依赖注入能力，主要是通过 `@provide` 和 `@inject` 两个装饰器来完成绑定定义和自动注入属性，大大简化了代码量。
+
+## 使用装饰器注入
+
+如果每次代码都需要手动绑定，然后通过 `get/getAsync` 方法拿到对应的对象，那将会非常繁琐，由于 在设计之初 midway/injection 体系就基于 ts，参考了业界的 IoC 实现，完成了属于自己的依赖注入能力，主要是通过 `@provide` 和 `@inject` 两个装饰器来完成绑定定义和自动注入属性，大大简化了代码量。
 
 ::: tip
 由于使用了依赖注入体系，我们希望所有的业务代码都通过 class 语法来完成
@@ -212,7 +245,7 @@ class Grandson extends Child {
 }
 ```
 
-`Grandson` 的实例 `gradson` 拥有 `@inject()` 装饰器注入的
+`Grandson` 的实例 `grandson` 拥有 `@inject()` 装饰器注入的
 `grandson.katana3`, `grandson.katana2`, `grandson.katana1` 属性。
 
 实现时，会查找 `Gradson` 的原型链，遍历原型链上所有用 `@inject()` 装饰的属性，运行装饰器，注入相应的属性。
@@ -266,6 +299,51 @@ const userService = await container.getAsync('user');
 
 同理，在使用 `@inject` 的时候也可以使用不同的 id。
 
+## 构造器注入
+
+除了标准的属性注入方法之外，midway 在一定程度上支持了构造器注入的方式，来让一些应用或者三方包平稳过度。
+
+同样还是使用 `@inject` 装饰器。
+
+```ts
+@provide()
+export class A {
+  config = {
+    c: 20
+  };
+}
+
+
+@provide()
+export class B {
+  config = {
+    c: 40
+  };
+}
+
+@provide()
+export class BaseService {
+
+  config;
+  plugin2;
+
+  constructor(
+    @inject() a,
+    @config('hello') config,
+    @inject() b,
+    @plugin('plugin2') plugin2
+  ) {
+    this.config = Object.assign(config, {
+      c: a.config.c + b.config.c + config.c
+    });
+    this.plugin2 = plugin2;
+  }
+
+} 
+```
+
+在一个类的构造器中，我们可以还可以使用其他的类似 `@config`, `@plugin`, `@logger` 等装饰器。只要是通过 IoC 管理的对象，都能够被自动依赖和注入。
+
 
 ## 配置作用域
 
@@ -306,12 +384,11 @@ assert(container.getAsync('diesel') === container.getAsync('diesel'))  // true
 
 在某些情况下，我们需要一个实例在被其他依赖调用前需要初始化，如果这个初始化只是读取某个文件，那么可以写成同步方式，而如果这个初始化是从远端拿取数据或者连接某个服务，这个情况下，普通的同步代码就非常的难写。
 
-midway 提供了异步初始化的能力，通过 `@async`  和  `@init` 标签来管理初始化方法。
+midway 提供了异步初始化的能力，通过 `@init` 标签来管理初始化方法。
 
 `@init` 方法目前只能是一个。
 
 ```typescript
-@async()
 @provide()
 export class BaseService {
 
@@ -335,7 +412,11 @@ export class BaseService {
 
 ```
 
-只要在类上标记 `@async` 装饰器之后，就代表了这个类会有异步初始化的情况，这个时候会自动通过异步的情况来调用 `@init`  标记的方法。
+::: warning 注意
+@async 装饰器已废弃，所有的 init 方法默认都会异步，同步初始化可以直接在构造器执行，此装饰器没有意义。
+:::
+
+只要在方法上标记 `@init` 装饰器之后，这个时候会自动在实例化之后，通过异步的来调用 `@init`  标记的方法。
 
 ## 动态函数注入
 
@@ -405,7 +486,6 @@ providerWrapper([
 
 ```typescript
 
-@async()
 @provide()
 export class BaseService {
 
@@ -474,7 +554,43 @@ providerWrapper([
 
 通过 `providerWrapper` 我们将一个原本的函数写法进行了包裹，和现有的依赖注入体系可以融合到一起，让容器能够统一管理。
 
-## 依赖树生成
+## 注入已有对象
+
+有时候，应用已经有现有的实例，而不是类，比如引入了一个第三库，这个时候如果希望对象能够被其他 IoC 容器中的实例引用，也可以通过增加对象的方式进行处理。
+
+我们拿常见的 http 请求库 [urllib](https://www.npmjs.com/package/urllib) 来举例。
+
+假如我们希望在不同的类中来使用，并且不通过 require 的方式，你需要在容器的入口通过 [registerobject](https://midwayjs.org/injection/api-reference/classes/container.html#registerobject) 方法添加这个对象。
+
+在添加的时候需要给出一个 key，方便其他类中注入。
+
+```ts
+// in global file
+import * as urllib from 'urllib';
+container.registerobject('httpclient', urllib);
+```
+
+这个时候就可以在任意的类中通过 `@inject` 来使用了。
+
+```ts
+@provide()
+export class BaseService {
+
+  @inject()
+  httpclient;
+
+  async getUser() {
+    return await this.httpclient.request('/api/getuser');
+  }
+} 
+```
+
+::: tip
+在 midway 中可以在 src/app.ts 中进行添加。
+:::
+
+
+## 通过依赖图排错
 
 在业务代码中，我们可能会碰到依赖注入不生效或者作用域配置错误的问题，这个时候由于容器管理的问题显得不透明，用户也不太清楚容器里有哪些东西，分别依赖了什么。
 

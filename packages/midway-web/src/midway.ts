@@ -3,12 +3,15 @@ import { Logger } from 'egg-logger';
 import { AgentWorkerLoader, AppWorkerLoader } from './loader/loader';
 import * as fs from 'fs';
 import * as path from 'path';
+import { EggRouter as Router } from '@eggjs/router';
 
 const MIDWAY_PATH = path.dirname(__dirname);
 
-class MidwayApplication extends (<{
+class MidwayApplication extends (Application as {
   new(...x)
-}> Application) {
+}) {
+
+  Router = Router;
 
   get [Symbol.for('egg#loader')]() {
     return AppWorkerLoader;
@@ -35,15 +38,15 @@ class MidwayApplication extends (<{
   }
 
   getPluginContext() {
-    return (<AppWorkerLoader>this.loader).pluginContext;
+    return (this.loader as AppWorkerLoader).pluginContext;
   }
 
   getApplicationContext() {
-    return (<AppWorkerLoader>this.loader).applicationContext;
+    return (this.loader as AppWorkerLoader).applicationContext;
   }
 
   generateController(controllerMapping: string) {
-    return (<AppWorkerLoader>this.loader).generateController(controllerMapping);
+    return (this.loader as AppWorkerLoader).generateController(controllerMapping);
   }
 
   /**
@@ -79,20 +82,42 @@ class MidwayApplication extends (<{
 
   dumpConfig() {
     super.dumpConfig();
+    const rundir = this.config.rundir;
     try {
       const tree = this.applicationContext.dumpDependency();
-      const rundir = this.config.rundir;
       const dumpFile = path.join(rundir, `${this.type}_dependency_${process.pid}`);
       fs.writeFileSync(dumpFile, tree);
     } catch (err) {
       this.coreLogger.warn(`dump dependency dot error: ${err.message}`);
     }
+
+    // dump routers to router.json
+    try {
+      const dumpRouterFile = path.join(rundir, 'midway-router.json');
+      const routers = [];
+      for (const router of this.loader.prioritySortRouters) {
+        for (const layer of router['router'].stack) {
+          routers.push({
+            name: layer.name,
+            methods: layer.methods,
+            paramNames: layer.paramNames,
+            path: layer.path,
+            regexp: layer.regexp.toString(),
+            stack: layer.stack.map(stack => stack._name || stack.name || 'anonymous'),
+          });
+        }
+      }
+
+      fs.writeFileSync(dumpRouterFile, JSON.stringify(routers, null, 2));
+    } catch (err) {
+      this.coreLogger.warn(`dumpConfig midway-router.json error: ${err.message}`);
+    }
   }
 }
 
-class MidwayAgent extends (<{
+class MidwayAgent extends (Agent as {
   new(...x)
-}> Agent) {
+}) {
 
   get [Symbol.for('egg#loader')]() {
     return AgentWorkerLoader;
@@ -115,11 +140,11 @@ class MidwayAgent extends (<{
   }
 
   getPluginContext() {
-    return (<AgentWorkerLoader>this.loader).pluginContext;
+    return (this.loader as AgentWorkerLoader).pluginContext;
   }
 
   getApplicationContext() {
-    return (<AgentWorkerLoader>this.loader).applicationContext;
+    return (this.loader as AgentWorkerLoader).applicationContext;
   }
 
   /**

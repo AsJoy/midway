@@ -1,27 +1,11 @@
-midway-init
-=======
+# midway-init
 
-[![NPM version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
-[![Test coverage][codecov-image]][codecov-url]
-[![David deps][david-image]][david-url]
-[![Known Vulnerabilities][snyk-image]][snyk-url]
-[![npm download][download-image]][download-url]
+[![Package Quality](http://npm.packagequality.com/shield/midway-init.svg)](http://packagequality.com/#?package=midway-init)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/midwayjs/midway/pulls)
 
-[npm-image]: https://img.shields.io/npm/v/egg-init.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/egg-init
-[travis-image]: https://img.shields.io/travis/eggjs/egg-init.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-init
-[codecov-image]: https://codecov.io/gh/eggjs/egg-init/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/eggjs/egg-init
-[david-image]: https://img.shields.io/david/eggjs/egg-init.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-init
-[snyk-image]: https://snyk.io/test/npm/egg-init/badge.svg?style=flat-square
-[snyk-url]: https://snyk.io/test/npm/egg-init
-[download-image]: https://img.shields.io/npm/dm/egg-init.svg?style=flat-square
-[download-url]: https://npmjs.org/package/egg-init
+this is a sub package for midway.
 
-Initializing midway app helper tools and it's building based on egg-init.
+Document: [https://midwayjs.org/midway](https://midwayjs.org/midway)
 
 ## Install
 
@@ -30,76 +14,47 @@ $ npm i midway-init -g
 $ midway-init -h
 ```
 
-## Create a `simple` type application
+## Create a boilerplate by type
 
 ```bash
-$ midway-init --type simple [destination directory]
+$ midway-init --type midway-ts
 ```
 
 ## Or select a boilerplate by yourself
 
 ```bash
-$ midway-init dest
-? Please select a boilerplate type (Use arrow keys)
-❯ simple - Simple midway app
-  plugin - midway plugin
-```
+$ midway-init
+? Hello, traveller.
+  Which template do you like? … 
+❯ midway-ts - Simple midway application boilerplate by ts.(by @midwayJs)
+  midway-demo - Simple example boilerplate for find bug or submit to midway-examples.(by @midwayJs)
+  midway-ts-strict - Simple midway application boilerplate by ts with ng style and strict eslint rules.(by @waitingsong)
+  midway-ts-ant-design-pro - A front-end and back-end separation project includes midway(ts) and ant-design-pro.(by @tw93)
 
+```
 ## Command
-
 ```
-Initializing midway project from boilerplate.
-Usage: midway-init [dir] --type=simple
-
+Usage: midway-init
 Options:
-  --type          boilerplate type                                      [string]
-  --dir           target directory                                      [string]
-  --force, -f     force to override directory                          [boolean]
-  --template      local path to boilerplate                             [string]
-  --package       boilerplate package name                              [string]
-  --registry, -r  npm registry, support china/npm/custom, default to auto detect
-                                                                        [string]
-  --silent        don't ask, just use default value                    [boolean]
-  --version       Show version number                                  [boolean]
-  -h, --help      Show help                                            [boolean]
+  --type          boilerplate type                                                [string]
+  --dir           target directory                                                [string]
+  --template      local path to boilerplate                                       [string]
+  --package       boilerplate package name                                        [string]
+  --registry, -r  npm registry, support china/npm/custom, default to auto detect  [string]
+  --version       Show version number                                             [boolean]
+  -h, --help      Show help                                                       [boolean]
 ```
 
-## Custom a boilerplate
+## Custom Template
 
-We use npm package to manager boilerplate, you can follow this steps:
+You can custom your boilerplate by [light-generator](https://github.com/midwayjs/light-generator#%E6%A8%A1%E6%9D%BF%E8%A7%84%E5%88%99) and use it by command `midway-init --package [your package name]`
 
-- Create a new repo like [egg-boilerplate-plugin](https://github.com/eggjs/egg-boilerplate-plugin)
-- Put all files under `boilerplate` dir
-- Use `midway-init --template=PATH` to check
-- `index.js` can define variables which can be useed on template, like `{{name}}`, but `\{{name}}` will ignore.
+Example
 
-    ```js
-    module.exports = {
-      name: {
-        desc: 'package-name',
-      },
-      pluginName: {
-        desc: 'plugin-name',
-        default(vars) {
-          return vars.name;
-        },
-        filter(v) {
-          return 'egg-' + v;
-        },
-      },
-      description: {
-        desc: 'my best plugin',
-      },
-      author: {
-        desc: 'author',
-        default: 'eggjs team'
-      },
-    };
-    ```
-- Write unit test, see `npm scripts` at [egg-boilerplate-simple](https://github.com/eggjs/egg-boilerplate-simple/blob/master/package.json#L5)
-- Add your package name to [egg-init-config](https://github.com/eggjs/egg-init-config)'s package.json `config.boilerplate` property
-- Publish your package to npm
+```bash
+midway-init --package=midway-boilerplate-typescript
+```
 
 ## License
 
-[MIT](LICENSE)
+[MIT]((http://github.com/midwayjs/midway/blob/master/LICENSE))

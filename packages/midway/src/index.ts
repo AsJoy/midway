@@ -1,5 +1,3 @@
-export * from 'injection';
-export * from 'midway-core';
 export * from 'midway-web';
 const Master = require('../cluster/master');
 

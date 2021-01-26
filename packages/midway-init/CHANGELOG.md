@@ -3,6 +3,481 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.20.3](https://github.com/midwayjs/midway/compare/v1.20.2...v1.20.3) (2020-09-07)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.20.1](https://github.com/midwayjs/midway/compare/v1.20.0...v1.20.1) (2020-06-16)
+
+
+### Bug Fixes
+
+* fix cnpm case ([945c797](https://github.com/midwayjs/midway/commit/945c7976f2f77fee3a40f2fdc38c870bb1f345e4))
+* lerna nohoist config for eslint-midway-contrib ([#499](https://github.com/midwayjs/midway/issues/499)) ([7e0dd24](https://github.com/midwayjs/midway/commit/7e0dd24bc3229623ce6bb4847817080caf1adc16))
+
+
+
+
+
+## [1.18.6](https://github.com/midwayjs/midway/compare/v1.18.5...v1.18.6) (2020-04-09)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.18.5](https://github.com/midwayjs/midway/compare/v1.18.4...v1.18.5) (2020-04-02)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.17.1](https://github.com/midwayjs/midway/compare/v1.17.0...v1.17.1) (2020-02-17)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+# [1.17.0](https://github.com/midwayjs/midway/compare/v1.16.4...v1.17.0) (2020-02-17)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.16.4](https://github.com/midwayjs/midway/compare/v1.16.3...v1.16.4) (2020-02-11)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.16.3](https://github.com/midwayjs/midway/compare/v1.16.2...v1.16.3) (2019-12-25)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.16.2](https://github.com/midwayjs/midway/compare/v1.16.1...v1.16.2) (2019-12-25)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.16.1](https://github.com/midwayjs/midway/compare/v1.16.0...v1.16.1) (2019-12-16)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.15.1](https://github.com/midwayjs/midway/compare/v1.15.0...v1.15.1) (2019-12-11)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+# [1.15.0](https://github.com/midwayjs/midway/compare/v1.14.4...v1.15.0) (2019-12-06)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.14.4](https://github.com/midwayjs/midway/compare/v1.14.3...v1.14.4) (2019-11-20)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.14.3](https://github.com/midwayjs/midway/compare/v1.14.2...v1.14.3) (2019-11-15)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.14.1](https://github.com/midwayjs/midway/compare/v1.14.0...v1.14.1) (2019-11-03)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+# [1.14.0](https://github.com/midwayjs/midway/compare/v1.13.0...v1.14.0) (2019-11-01)
+
+
+### Features
+
+* add egg-init args ([d6c3582](https://github.com/midwayjs/midway/commit/d6c3582))
+* support npm registry parameter ([d9adfcf](https://github.com/midwayjs/midway/commit/d9adfcf))
+* use new generator for midway-init ([634b748](https://github.com/midwayjs/midway/commit/634b748))
+
+
+
+
+
+## [1.12.1](https://github.com/midwayjs/midway/compare/v1.12.0...v1.12.1) (2019-10-12)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+# [1.12.0](https://github.com/midwayjs/midway/compare/v1.11.6...v1.12.0) (2019-10-11)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.11.5](https://github.com/midwayjs/midway/compare/v1.11.4...v1.11.5) (2019-09-06)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.11.4](https://github.com/midwayjs/midway/compare/v1.11.3...v1.11.4) (2019-09-06)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.11.3](https://github.com/midwayjs/midway/compare/v1.11.2...v1.11.3) (2019-09-06)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.11.2](https://github.com/midwayjs/midway/compare/v1.11.1...v1.11.2) (2019-08-30)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+# [1.11.0](https://github.com/midwayjs/midway/compare/v1.10.9...v1.11.0) (2019-08-09)
+
+
+### Features
+
+* **boilerplate:** enable source map for stack trace ([77afc3f](https://github.com/midwayjs/midway/commit/77afc3f))
+
+
+
+
+
+## [1.10.8](https://github.com/midwayjs/midway/compare/v1.10.7...v1.10.8) (2019-08-03)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.10.7](https://github.com/midwayjs/midway/compare/v1.10.6...v1.10.7) (2019-08-03)
+
+
+### Bug Fixes
+
+* **boilerplate:** missing comma in .vscode/settings.json ([62fa953](https://github.com/midwayjs/midway/commit/62fa953))
+
+
+
+
+
+## [1.10.6](https://github.com/midwayjs/midway/compare/v1.10.5...v1.10.6) (2019-07-30)
+
+
+### Bug Fixes
+
+* @types/mocha has a wrong version: 6.0.0 ([e1a7285](https://github.com/midwayjs/midway/commit/e1a7285))
+
+
+
+
+
+## [1.10.5](https://github.com/midwayjs/midway/compare/v1.10.4...v1.10.5) (2019-07-30)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.10.4](https://github.com/midwayjs/midway/compare/v1.10.3...v1.10.4) (2019-07-24)
+
+
+### Bug Fixes
+
+* **boilerplate:** update vscode path match pattern for all boilerplate ([88352e5](https://github.com/midwayjs/midway/commit/88352e5))
+
+
+
+
+
+## [1.10.3](https://github.com/midwayjs/midway/compare/v1.10.2...v1.10.3) (2019-07-23)
+
+
+### Bug Fixes
+
+* **boilerplate:** sync configurations for all boilerplate ([e73ae35](https://github.com/midwayjs/midway/commit/e73ae35))
+* **boilerplate:** update deps @types/mocha for all boilerplate ([d84cde1](https://github.com/midwayjs/midway/commit/d84cde1))
+* **boilerplate:** update deps for all boilerplate ([4a015e7](https://github.com/midwayjs/midway/commit/4a015e7))
+* **boilerplate:** update nodejs requirement for all boilerplate ([1602d3a](https://github.com/midwayjs/midway/commit/1602d3a)), closes [#279](https://github.com/midwayjs/midway/issues/279)
+
+
+
+
+
+## [1.10.2](https://github.com/midwayjs/midway/compare/v1.10.1...v1.10.2) (2019-07-20)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.10.1](https://github.com/midwayjs/midway/compare/v1.10.0...v1.10.1) (2019-07-18)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+# [1.10.0](https://github.com/midwayjs/midway/compare/v1.9.0...v1.10.0) (2019-07-16)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+# [1.9.0](https://github.com/midwayjs/midway/compare/v1.8.0...v1.9.0) (2019-07-13)
+
+
+### Bug Fixes
+
+* **midway-init:** Internal employees can not use the external network midway ([3179434](https://github.com/midwayjs/midway/commit/3179434))
+
+
+### Features
+
+* **boilerplate:** add midway-ts-strict-boilerplate ([8ee325c](https://github.com/midwayjs/midway/commit/8ee325c))
+* **boilerplate:** enforce kebabCase style for filenames for midway-ts-strict ([816941b](https://github.com/midwayjs/midway/commit/816941b))
+* **boilerplate:** update midway-ts-strict ([c8388f0](https://github.com/midwayjs/midway/commit/c8388f0)), closes [#269](https://github.com/midwayjs/midway/issues/269)
+
+
+
+
+
+## [1.6.2](https://github.com/midwayjs/midway/compare/v1.6.1...v1.6.2) (2019-06-12)
+
+
+### Bug Fixes
+
+* fix tsconfig in template ([1680d29](https://github.com/midwayjs/midway/commit/1680d29))
+
+
+
+
+
+# [1.6.0](https://github.com/midwayjs/midway/compare/v1.5.6...v1.6.0) (2019-06-11)
+
+
+### Bug Fixes
+
+* **types:** duplicate import of the controller ([2b4600a](https://github.com/midwayjs/midway/commit/2b4600a))
+
+
+### Features
+
+* **types:** import and use Context for boilerplate ([d183196](https://github.com/midwayjs/midway/commit/d183196))
+* **vscode:** add launch.json for vscode debug ([9741a53](https://github.com/midwayjs/midway/commit/9741a53))
+* **vscode:** add settings.json for vscode ([f7d178b](https://github.com/midwayjs/midway/commit/f7d178b))
+
+
+
+
+
+## [1.5.6](https://github.com/midwayjs/midway/compare/v1.5.5...v1.5.6) (2019-05-13)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.5.4](https://github.com/midwayjs/midway/compare/v1.5.3...v1.5.4) (2019-05-09)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.5.3](https://github.com/midwayjs/midway/compare/v1.5.2...v1.5.3) (2019-05-08)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+# [1.5.0](https://github.com/midwayjs/midway/compare/v1.4.10...v1.5.0) (2019-04-11)
+
+
+### Bug Fixes
+
+* fix midway-init ci error ([8f32dcb](https://github.com/midwayjs/midway/commit/8f32dcb))
+
+
+
+
+
+## [1.4.8](https://github.com/midwayjs/midway/compare/v1.4.7...v1.4.8) (2019-03-11)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.4.7](https://github.com/midwayjs/midway/compare/v1.4.6...v1.4.7) (2019-03-08)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.4.3](https://github.com/midwayjs/midway/compare/v1.4.2...v1.4.3) (2019-03-01)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.4.1](https://github.com/midwayjs/midway/compare/v1.4.0...v1.4.1) (2019-02-27)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+# [1.3.0](https://github.com/midwayjs/midway/compare/v1.2.4...v1.3.0) (2019-02-12)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+# [1.2.0](https://github.com/midwayjs/midway/compare/v1.1.2...v1.2.0) (2019-01-29)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+# [1.1.0](https://github.com/midwayjs/midway/compare/v1.0.5...v1.1.0) (2019-01-23)
+
+
+### Bug Fixes
+
+* fix test case ([de70efa](https://github.com/midwayjs/midway/commit/de70efa))
+
+
+### Features
+
+* 用户执行 init 时判断环境 ([142e0e2](https://github.com/midwayjs/midway/commit/142e0e2))
+
+
+
+
+
+## [1.0.5](https://github.com/midwayjs/midway/compare/v1.0.4...v1.0.5) (2019-01-07)
+
+
+### Bug Fixes
+
+* override alinode default path ([f140a18](https://github.com/midwayjs/midway/commit/f140a18))
+
+
+
+
+
+## [1.0.4](https://github.com/midwayjs/midway/compare/v1.0.3...v1.0.4) (2018-12-29)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.0.3](https://github.com/midwayjs/midway/compare/v1.0.2...v1.0.3) (2018-12-27)
+
+
+### Bug Fixes
+
+* remove pull template from github and add doc for windows ([3ac69ef](https://github.com/midwayjs/midway/commit/3ac69ef))
+
+
+
+
+
+## [1.0.2](https://github.com/midwayjs/midway/compare/v1.0.1...v1.0.2) (2018-12-26)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
+## [1.0.1](https://github.com/midwayjs/midway/compare/v1.0.0...v1.0.1) (2018-12-23)
+
+**Note:** Version bump only for package midway-init
+
+
+
+
+
 # [0.7.0](https://github.com/midwayjs/midway/compare/v0.6.5...v0.7.0) (2018-12-09)
 
 **Note:** Version bump only for package midway-init

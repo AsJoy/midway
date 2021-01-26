@@ -3,6 +3,632 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.20.3](https://github.com/midwayjs/midway/compare/v1.20.2...v1.20.3) (2020-09-07)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.20.2](https://github.com/midwayjs/midway/compare/v1.20.1...v1.20.2) (2020-06-28)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.20.1](https://github.com/midwayjs/midway/compare/v1.20.0...v1.20.1) (2020-06-16)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+# [1.20.0](https://github.com/midwayjs/midway/compare/v1.19.1...v1.20.0) (2020-05-27)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.19.1](https://github.com/midwayjs/midway/compare/v1.19.0...v1.19.1) (2020-05-08)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+# [1.19.0](https://github.com/midwayjs/midway/compare/v1.18.6...v1.19.0) (2020-04-29)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.18.6](https://github.com/midwayjs/midway/compare/v1.18.5...v1.18.6) (2020-04-09)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.18.5](https://github.com/midwayjs/midway/compare/v1.18.4...v1.18.5) (2020-04-02)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.18.4](https://github.com/midwayjs/midway/compare/v1.18.3...v1.18.4) (2020-04-02)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.18.2](https://github.com/midwayjs/midway/compare/v1.18.1...v1.18.2) (2020-03-21)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.18.1](https://github.com/midwayjs/midway/compare/v1.18.0...v1.18.1) (2020-03-17)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+# [1.18.0](https://github.com/midwayjs/midway/compare/v1.17.1...v1.18.0) (2020-03-04)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.17.1](https://github.com/midwayjs/midway/compare/v1.17.0...v1.17.1) (2020-02-17)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+# [1.17.0](https://github.com/midwayjs/midway/compare/v1.16.4...v1.17.0) (2020-02-17)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.16.4](https://github.com/midwayjs/midway/compare/v1.16.3...v1.16.4) (2020-02-11)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.16.3](https://github.com/midwayjs/midway/compare/v1.16.2...v1.16.3) (2019-12-25)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.16.2](https://github.com/midwayjs/midway/compare/v1.16.1...v1.16.2) (2019-12-25)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.16.1](https://github.com/midwayjs/midway/compare/v1.16.0...v1.16.1) (2019-12-16)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+# [1.16.0](https://github.com/midwayjs/midway/compare/v1.15.1...v1.16.0) (2019-12-16)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.15.1](https://github.com/midwayjs/midway/compare/v1.15.0...v1.15.1) (2019-12-11)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+# [1.15.0](https://github.com/midwayjs/midway/compare/v1.14.4...v1.15.0) (2019-12-06)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.14.4](https://github.com/midwayjs/midway/compare/v1.14.3...v1.14.4) (2019-11-20)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.14.3](https://github.com/midwayjs/midway/compare/v1.14.2...v1.14.3) (2019-11-15)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.14.2](https://github.com/midwayjs/midway/compare/v1.14.1...v1.14.2) (2019-11-10)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.14.1](https://github.com/midwayjs/midway/compare/v1.14.0...v1.14.1) (2019-11-03)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+# [1.14.0](https://github.com/midwayjs/midway/compare/v1.13.0...v1.14.0) (2019-11-01)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+# [1.13.0](https://github.com/midwayjs/midway/compare/v1.12.1...v1.13.0) (2019-10-16)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.12.1](https://github.com/midwayjs/midway/compare/v1.12.0...v1.12.1) (2019-10-12)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+# [1.12.0](https://github.com/midwayjs/midway/compare/v1.11.6...v1.12.0) (2019-10-11)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.11.6](https://github.com/midwayjs/midway/compare/v1.11.5...v1.11.6) (2019-09-30)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.11.4](https://github.com/midwayjs/midway/compare/v1.11.3...v1.11.4) (2019-09-06)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.11.3](https://github.com/midwayjs/midway/compare/v1.11.2...v1.11.3) (2019-09-06)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.11.2](https://github.com/midwayjs/midway/compare/v1.11.1...v1.11.2) (2019-08-30)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.11.1](https://github.com/midwayjs/midway/compare/v1.11.0...v1.11.1) (2019-08-10)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+# [1.11.0](https://github.com/midwayjs/midway/compare/v1.10.9...v1.11.0) (2019-08-09)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.10.9](https://github.com/midwayjs/midway/compare/v1.10.8...v1.10.9) (2019-08-06)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.10.8](https://github.com/midwayjs/midway/compare/v1.10.7...v1.10.8) (2019-08-03)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.10.7](https://github.com/midwayjs/midway/compare/v1.10.6...v1.10.7) (2019-08-03)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.10.5](https://github.com/midwayjs/midway/compare/v1.10.4...v1.10.5) (2019-07-30)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.10.2](https://github.com/midwayjs/midway/compare/v1.10.1...v1.10.2) (2019-07-20)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+# [1.10.0](https://github.com/midwayjs/midway/compare/v1.9.0...v1.10.0) (2019-07-16)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+# [1.9.0](https://github.com/midwayjs/midway/compare/v1.8.0...v1.9.0) (2019-07-13)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+# [1.8.0](https://github.com/midwayjs/midway/compare/v1.7.0...v1.8.0) (2019-06-29)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+# [1.7.0](https://github.com/midwayjs/midway/compare/v1.6.3...v1.7.0) (2019-06-25)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.6.3](https://github.com/midwayjs/midway/compare/v1.6.2...v1.6.3) (2019-06-13)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.6.1](https://github.com/midwayjs/midway/compare/v1.6.0...v1.6.1) (2019-06-11)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+# [1.6.0](https://github.com/midwayjs/midway/compare/v1.5.6...v1.6.0) (2019-06-11)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.5.6](https://github.com/midwayjs/midway/compare/v1.5.5...v1.5.6) (2019-05-13)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.5.5](https://github.com/midwayjs/midway/compare/v1.5.4...v1.5.5) (2019-05-13)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.5.2](https://github.com/midwayjs/midway/compare/v1.5.1...v1.5.2) (2019-04-29)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.5.1](https://github.com/midwayjs/midway/compare/v1.5.0...v1.5.1) (2019-04-15)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+# [1.5.0](https://github.com/midwayjs/midway/compare/v1.4.10...v1.5.0) (2019-04-11)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.4.10](https://github.com/midwayjs/midway/compare/v1.4.9...v1.4.10) (2019-03-12)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.4.9](https://github.com/midwayjs/midway/compare/v1.4.8...v1.4.9) (2019-03-11)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.4.8](https://github.com/midwayjs/midway/compare/v1.4.7...v1.4.8) (2019-03-11)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.4.7](https://github.com/midwayjs/midway/compare/v1.4.6...v1.4.7) (2019-03-08)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.4.6](https://github.com/midwayjs/midway/compare/v1.4.5...v1.4.6) (2019-03-07)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.4.5](https://github.com/midwayjs/midway/compare/v1.4.4...v1.4.5) (2019-03-06)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.4.4](https://github.com/midwayjs/midway/compare/v1.4.3...v1.4.4) (2019-03-06)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.4.3](https://github.com/midwayjs/midway/compare/v1.4.2...v1.4.3) (2019-03-01)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.4.2](https://github.com/midwayjs/midway/compare/v1.4.1...v1.4.2) (2019-02-28)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.4.1](https://github.com/midwayjs/midway/compare/v1.4.0...v1.4.1) (2019-02-27)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.3.2](https://github.com/midwayjs/midway/compare/v1.3.1...v1.3.2) (2019-02-22)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.3.1](https://github.com/midwayjs/midway/compare/v1.3.0...v1.3.1) (2019-02-18)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+# [1.3.0](https://github.com/midwayjs/midway/compare/v1.2.4...v1.3.0) (2019-02-12)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.2.4](https://github.com/midwayjs/midway/compare/v1.2.3...v1.2.4) (2019-02-11)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.2.3](https://github.com/midwayjs/midway/compare/v1.2.2...v1.2.3) (2019-02-01)
+
+
+### Bug Fixes
+
+* fix more lint ([12873dc](https://github.com/midwayjs/midway/commit/12873dc))
+
+
+
+
+
+## [1.2.2](https://github.com/midwayjs/midway/compare/v1.2.1...v1.2.2) (2019-01-30)
+
+
+### Bug Fixes
+
+* import router to fix core ([71a2f61](https://github.com/midwayjs/midway/commit/71a2f61))
+
+
+
+
+
+## [1.2.1](https://github.com/midwayjs/midway/compare/v1.2.0...v1.2.1) (2019-01-30)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+# [1.2.0](https://github.com/midwayjs/midway/compare/v1.1.2...v1.2.0) (2019-01-29)
+
+
+### Features
+
+* transform injection to another github repo ([5f39ea9](https://github.com/midwayjs/midway/commit/5f39ea9))
+
+
+
+
+
+## [1.1.2](https://github.com/midwayjs/midway/compare/v1.1.1...v1.1.2) (2019-01-27)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.1.1](https://github.com/midwayjs/midway/compare/v1.1.0...v1.1.1) (2019-01-23)
+
+
+### Bug Fixes
+
+* remove application definition from egg ([218cf3b](https://github.com/midwayjs/midway/commit/218cf3b))
+
+
+
+
+
+# [1.1.0](https://github.com/midwayjs/midway/compare/v1.0.5...v1.1.0) (2019-01-23)
+
+
+### Bug Fixes
+
+* fix test case ([de70efa](https://github.com/midwayjs/midway/commit/de70efa))
+
+
+
+
+
+## [1.0.5](https://github.com/midwayjs/midway/compare/v1.0.4...v1.0.5) (2019-01-07)
+
+
+### Bug Fixes
+
+* add appDir in appInfo ([4399aba](https://github.com/midwayjs/midway/commit/4399aba))
+
+
+
+
+
+## [1.0.2](https://github.com/midwayjs/midway/compare/v1.0.1...v1.0.2) (2018-12-26)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
+## [1.0.1](https://github.com/midwayjs/midway/compare/v1.0.0...v1.0.1) (2018-12-23)
+
+**Note:** Version bump only for package midway
+
+
+
+
+
 ## [0.7.1](https://github.com/midwayjs/midway/compare/v0.7.0...v0.7.1) (2018-12-18)
 
 **Note:** Version bump only for package midway

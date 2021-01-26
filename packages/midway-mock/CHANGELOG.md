@@ -3,6 +3,496 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.20.3](https://github.com/midwayjs/midway/compare/v1.20.2...v1.20.3) (2020-09-07)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.20.1](https://github.com/midwayjs/midway/compare/v1.20.0...v1.20.1) (2020-06-16)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.18.6](https://github.com/midwayjs/midway/compare/v1.18.5...v1.18.6) (2020-04-09)
+
+
+### Bug Fixes
+
+* jest support ([#466](https://github.com/midwayjs/midway/issues/466)) ([2d176cf](https://github.com/midwayjs/midway/commit/2d176cf3ec97bdc377ea51c7e42736a994ab4e63))
+
+
+
+
+
+## [1.18.5](https://github.com/midwayjs/midway/compare/v1.18.4...v1.18.5) (2020-04-02)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.18.2](https://github.com/midwayjs/midway/compare/v1.18.1...v1.18.2) (2020-03-21)
+
+
+### Bug Fixes
+
+* mock fn ([#439](https://github.com/midwayjs/midway/issues/439)) ([dd9f843](https://github.com/midwayjs/midway/commit/dd9f8434faae3cdc07535774fbf18b7163a3dc35))
+
+
+
+
+
+## [1.18.1](https://github.com/midwayjs/midway/compare/v1.18.0...v1.18.1) (2020-03-17)
+
+
+### Bug Fixes
+
+* lazy get default framework ([#430](https://github.com/midwayjs/midway/issues/430)) ([140c3df](https://github.com/midwayjs/midway/commit/140c3df79ed10f4df09be73eb73e3379d0b82e27))
+
+
+
+
+
+# [1.18.0](https://github.com/midwayjs/midway/compare/v1.17.1...v1.18.0) (2020-03-04)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.17.1](https://github.com/midwayjs/midway/compare/v1.17.0...v1.17.1) (2020-02-17)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+# [1.17.0](https://github.com/midwayjs/midway/compare/v1.16.4...v1.17.0) (2020-02-17)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.16.4](https://github.com/midwayjs/midway/compare/v1.16.3...v1.16.4) (2020-02-11)
+
+
+### Bug Fixes
+
+* egg bin modify setup file rule ([#380](https://github.com/midwayjs/midway/issues/380)) ([4b9461d](https://github.com/midwayjs/midway/commit/4b9461d))
+
+
+
+
+
+## [1.16.3](https://github.com/midwayjs/midway/compare/v1.16.2...v1.16.3) (2019-12-25)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.16.2](https://github.com/midwayjs/midway/compare/v1.16.1...v1.16.2) (2019-12-25)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.16.1](https://github.com/midwayjs/midway/compare/v1.16.0...v1.16.1) (2019-12-16)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+# [1.16.0](https://github.com/midwayjs/midway/compare/v1.15.1...v1.16.0) (2019-12-16)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.15.1](https://github.com/midwayjs/midway/compare/v1.15.0...v1.15.1) (2019-12-11)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+# [1.15.0](https://github.com/midwayjs/midway/compare/v1.14.4...v1.15.0) (2019-12-06)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.14.4](https://github.com/midwayjs/midway/compare/v1.14.3...v1.14.4) (2019-11-20)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.14.3](https://github.com/midwayjs/midway/compare/v1.14.2...v1.14.3) (2019-11-15)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.14.1](https://github.com/midwayjs/midway/compare/v1.14.0...v1.14.1) (2019-11-03)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+# [1.14.0](https://github.com/midwayjs/midway/compare/v1.13.0...v1.14.0) (2019-11-01)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.12.1](https://github.com/midwayjs/midway/compare/v1.12.0...v1.12.1) (2019-10-12)
+
+
+### Bug Fixes
+
+* **midway-bin:** use resolveModule() instead of findFramework() ([#344](https://github.com/midwayjs/midway/issues/344)) ([8c24e2e](https://github.com/midwayjs/midway/commit/8c24e2e))
+
+
+### BREAKING CHANGES
+
+* **midway-bin:** remove findFramework()
+
+
+
+
+
+# [1.12.0](https://github.com/midwayjs/midway/compare/v1.11.6...v1.12.0) (2019-10-11)
+
+
+### Features
+
+* **midway-bin:** add and export functions ([80ef6b8](https://github.com/midwayjs/midway/commit/80ef6b8))
+
+
+
+
+
+## [1.11.4](https://github.com/midwayjs/midway/compare/v1.11.3...v1.11.4) (2019-09-06)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.11.3](https://github.com/midwayjs/midway/compare/v1.11.2...v1.11.3) (2019-09-06)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.11.2](https://github.com/midwayjs/midway/compare/v1.11.1...v1.11.2) (2019-08-30)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.11.1](https://github.com/midwayjs/midway/compare/v1.11.0...v1.11.1) (2019-08-10)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.10.9](https://github.com/midwayjs/midway/compare/v1.10.8...v1.10.9) (2019-08-06)
+
+
+### Bug Fixes
+
+* app/extend 没有发布到 npm ([73ba51a](https://github.com/midwayjs/midway/commit/73ba51a))
+
+
+
+
+
+## [1.10.8](https://github.com/midwayjs/midway/compare/v1.10.7...v1.10.8) (2019-08-03)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.10.7](https://github.com/midwayjs/midway/compare/v1.10.6...v1.10.7) (2019-08-03)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.10.5](https://github.com/midwayjs/midway/compare/v1.10.4...v1.10.5) (2019-07-30)
+
+
+### Bug Fixes
+
+* compatible with midway mock ([d738b7f](https://github.com/midwayjs/midway/commit/d738b7f))
+
+
+
+
+
+## [1.10.2](https://github.com/midwayjs/midway/compare/v1.10.1...v1.10.2) (2019-07-20)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+# [1.9.0](https://github.com/midwayjs/midway/compare/v1.8.0...v1.9.0) (2019-07-13)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+# [1.8.0](https://github.com/midwayjs/midway/compare/v1.7.0...v1.8.0) (2019-06-29)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+# [1.7.0](https://github.com/midwayjs/midway/compare/v1.6.3...v1.7.0) (2019-06-25)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.5.6](https://github.com/midwayjs/midway/compare/v1.5.5...v1.5.6) (2019-05-13)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.5.2](https://github.com/midwayjs/midway/compare/v1.5.1...v1.5.2) (2019-04-29)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+# [1.5.0](https://github.com/midwayjs/midway/compare/v1.4.10...v1.5.0) (2019-04-11)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.4.8](https://github.com/midwayjs/midway/compare/v1.4.7...v1.4.8) (2019-03-11)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.4.7](https://github.com/midwayjs/midway/compare/v1.4.6...v1.4.7) (2019-03-08)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.4.6](https://github.com/midwayjs/midway/compare/v1.4.5...v1.4.6) (2019-03-07)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.4.4](https://github.com/midwayjs/midway/compare/v1.4.3...v1.4.4) (2019-03-06)
+
+
+### Bug Fixes
+
+* fix decorator i midway-mock ([60367fb](https://github.com/midwayjs/midway/commit/60367fb))
+* js-app-xml test case ([1298195](https://github.com/midwayjs/midway/commit/1298195))
+
+
+
+
+
+## [1.4.3](https://github.com/midwayjs/midway/compare/v1.4.2...v1.4.3) (2019-03-01)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.4.2](https://github.com/midwayjs/midway/compare/v1.4.1...v1.4.2) (2019-02-28)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.4.1](https://github.com/midwayjs/midway/compare/v1.4.0...v1.4.1) (2019-02-27)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.3.2](https://github.com/midwayjs/midway/compare/v1.3.1...v1.3.2) (2019-02-22)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+# [1.3.0](https://github.com/midwayjs/midway/compare/v1.2.4...v1.3.0) (2019-02-12)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.2.3](https://github.com/midwayjs/midway/compare/v1.2.2...v1.2.3) (2019-02-01)
+
+
+### Bug Fixes
+
+* fix more lint ([12873dc](https://github.com/midwayjs/midway/commit/12873dc))
+
+
+
+
+
+## [1.2.2](https://github.com/midwayjs/midway/compare/v1.2.1...v1.2.2) (2019-01-30)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.2.1](https://github.com/midwayjs/midway/compare/v1.2.0...v1.2.1) (2019-01-30)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+# [1.2.0](https://github.com/midwayjs/midway/compare/v1.1.2...v1.2.0) (2019-01-29)
+
+
+### Features
+
+* midway-mock支持applicationContext获取ctx依赖注入，支持mock IoC容器中的对象方法 ([4f07c6d](https://github.com/midwayjs/midway/commit/4f07c6d))
+
+
+
+
+
+## [1.1.2](https://github.com/midwayjs/midway/compare/v1.1.1...v1.1.2) (2019-01-27)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.1.1](https://github.com/midwayjs/midway/compare/v1.1.0...v1.1.1) (2019-01-23)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+# [1.1.0](https://github.com/midwayjs/midway/compare/v1.0.5...v1.1.0) (2019-01-23)
+
+
+### Bug Fixes
+
+* fix test case ([de70efa](https://github.com/midwayjs/midway/commit/de70efa))
+
+
+
+
+
+## [1.0.5](https://github.com/midwayjs/midway/compare/v1.0.4...v1.0.5) (2019-01-07)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.0.2](https://github.com/midwayjs/midway/compare/v1.0.1...v1.0.2) (2018-12-26)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
+## [1.0.1](https://github.com/midwayjs/midway/compare/v1.0.0...v1.0.1) (2018-12-23)
+
+**Note:** Version bump only for package midway-mock
+
+
+
+
+
 # [0.7.0](https://github.com/midwayjs/midway/compare/v0.6.5...v0.7.0) (2018-12-09)
 
 **Note:** Version bump only for package midway-mock

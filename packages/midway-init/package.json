@@ -1,22 +1,19 @@
 {
   "name": "midway-init",
-  "version": "0.7.0",
+  "version": "1.20.3",
   "dependencies": {
-    "egg-init": "^1.14.0"
+    "chalk": "^3.0.0",
+    "enquirer": "^2.3.2",
+    "light-generator": "^1.4.0",
+    "yargs": "^15.0.0"
   },
   "main": "lib/command.js",
   "devDependencies": {
-    "autod": "^3.0.1",
-    "coffee": "^4.1.0",
-    "eslint": "^4.13.1",
+    "eslint": "7",
     "eslint-config-egg": "^7.0.0",
-    "intelli-espower-loader": "^1.0.1",
-    "midway-bin": "^0.7.0",
-    "mm": "^2.2.0",
-    "power-assert": "^1.6.0",
-    "proxy": "^0.2.4",
-    "rimraf": "^2.6.1",
-    "webstorm-disable-index": "^1.0.11"
+    "midway-bin": "^1.20.3",
+    "mz-modules": "^2.1.0",
+    "power-assert": "^1.6.1"
   },
   "keywords": [
     "midway",
@@ -29,7 +26,7 @@
   "files": [
     "bin",
     "lib",
-    "boilerplate"
+    "boilerplate.json"
   ],
   "scripts": {
     "lint": "eslint bin lib test",
@@ -37,7 +34,7 @@
     "test": "npm run lint && midway-bin test",
     "cov": "midway-bin cov",
     "ci": "npm run lint && midway-bin cov",
-    "autod": "autod"
+    "autod": "midway-bin autod"
   },
   "engines": {
     "node": ">=8.0.0"

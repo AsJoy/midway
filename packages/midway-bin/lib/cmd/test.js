@@ -1,4 +1,5 @@
 'use strict';
+const co = require('co');
 
 class TestCommand extends require('egg-bin').TestCommand {
   constructor(rawArgv) {
@@ -6,11 +7,11 @@ class TestCommand extends require('egg-bin').TestCommand {
     this.usage = 'Usage: midway-bin test [files] [options]';
   }
 
-  * run(context) {
+  async run(context) {
     if (!context.env.NODE_ENV) {
       context.env.NODE_ENV = 'unittest';
     }
-    yield super.run(context);
+    await co(super.run(context));
   }
 }
 

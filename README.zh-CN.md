@@ -6,19 +6,18 @@
 [![GitHub tag](https://img.shields.io/github/tag/midwayjs/midway.svg)]()
 [![Build Status](https://travis-ci.org/midwayjs/midway.svg?branch=develop)](https://travis-ci.org/midwayjs/midway)
 [![Test Coverage](https://img.shields.io/codecov/c/github/midwayjs/midway/master.svg)](https://codecov.io/gh/midwayjs/midway/branch/master)
-[![Package Quality](http://npm.packagequality.com/shield/midway.svg)](http://packagequality.com/#?package=midway)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 [![Known Vulnerabilities](https://snyk.io/test/npm/midway/badge.svg)](https://snyk.io/test/npm/midway)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/midwayjs/midway/pulls)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/856737478fa94e78bce39d5fc2315cec)](https://www.codacy.com/app/czy88840616/midway?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=midwayjs/midway&amp;utm_campaign=Badge_Grade)
-
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/midwayjs/midway) 
 
 ## 安装
 
 ```bash
 $ npm install midway --save
 ```
-需要 Node.js >= 8.0.0。
+需要 Node.js >= 10.16.0。
 
 ## 特性
 
@@ -39,6 +38,16 @@ $ npm run dev
 $ open http://localhost:7001
 ```
 
+## 文档和社区
+
+- [官网和文档](https://midwayjs.org/midway/)
+- [所有的 Egg 插件](https://github.com/search?q=topic%3Aegg-plugin&type=Repositories)
+
+## 示例
+
+请访问 [midway-examples](https://github.com/midwayjs/midway-examples).
+
+
 ## 贡献
 
 
@@ -48,4 +57,4 @@ $ open http://localhost:7001
 
 ## License
 
-[MIT]((http://github.com/midwayjs/midway/blob/master/LICENSE))
+[MIT](http://github.com/midwayjs/midway/blob/master/LICENSE)

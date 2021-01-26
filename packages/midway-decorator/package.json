@@ -1,0 +1,36 @@
+{
+  "name": "@midwayjs/decorator",
+  "version": "1.20.3",
+  "description": "definition decorator for midway project",
+  "main": "dist/index",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run lint && midway-bin build -c",
+    "lint": "../../node_modules/.bin/tslint --format prose -c ../../tslint.json --fix 'src/**/*.ts' 'test/**/*.ts'",
+    "test": "npm run lint && midway-bin clean && NODE_ENV=test midway-bin test --ts",
+    "cov": "midway-bin cov --ts",
+    "ci": "npm run test",
+    "autod": "midway-bin autod"
+  },
+  "dependencies": {
+    "injection": "^1.8.0"
+  },
+  "devDependencies": {
+    "midway-bin": "^1.20.3"
+  },
+  "keywords": [
+    "midway",
+    "decorator"
+  ],
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "author": "Harry Chen <czy88840616@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/midwayjs/midway.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
